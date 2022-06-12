@@ -1,0 +1,34 @@
+{
+  "name": "asistenciacovid19",
+  "version": "1.0.0",
+  "description": "ASistencia COVID-19 Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "concurrently": "^7.2.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.2.0",
+    "google-meet-api": "^1.0.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.5",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "node-mailer": "^0.1.1",
+    "nodemon": "^2.0.16",
+    "request-promise": "^4.2.6"
+  }
+}
